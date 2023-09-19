@@ -1,0 +1,109 @@
+.Navbar{
+    background-color: rgb(26, 26, 26);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 12vh;
+    position: fixed;
+    z-index: 2000; /* Asegura que la navbar esté en un nivel superior  osea si pongo z-index : 2000 le va ganar al de mil  y se va interponer */
+
+}
+.ME {
+   float: left;
+   margin-top: 35px;
+   margin-left: 10px;
+}
+
+
+
+.Links{
+    float: right;
+    margin-right: 20px;
+    margin-top: 35px;
+}
+.links_rigth{
+    margin-left: 10px;
+    color: aliceblue;
+
+}
+
+
+/*cover*/
+
+.Cover {
+    height: 92vh;
+    background-color: black;
+    margin-top: -15px;
+    color: aliceblue;
+    background: linear-gradient(-45deg, rgba(0, 0, 0, 0.505), rgba(15, 15, 15, 0.85)) , url(https://i.pinimg.com/originals/7d/05/c8/7d05c8374e342ad88ae74d72183e92b3.gif) ;
+    background-size: cover;
+    background-position: center;
+    
+}
+.colors {
+color: rgb(160, 254, 105);
+}
+
+
+.list{margin-top: 58vh;}
+.lists {
+    margin-top: 2vh;
+    font-size: 12px;
+    transition: 0.6s;
+}
+.lists:hover{
+    color: rgb(255, 90, 203);transition:1s;
+    font-size: 3em;
+    animation: moveUpDown 1s ease-in-out infinite;
+    cursor: pointer;
+    margin-top: -4vh;
+    background-color: #181818bf;
+    height: 10vh;
+    width: 70%;
+    text-align: center;
+    border-radius: 50px 1px 5px 1px;
+
+}
+@keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+
+@media(max-width: 600px){
+    .Navbar {
+     width: 100%;
+     font-size: 15px;
+    }
+     .list{display: none;}
+    .lists {
+        margin-top: 1vh;
+    }
+   
+
+  }
+
+/*scroll menu*/
+
+  div.scrollmenu {
+    background-color: #181818;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    transition: 0.5s;
+
+  }
+  
+  div.scrollmenu a:hover {
+    background-color: #000000;
+    transition: 1s;
+  }
